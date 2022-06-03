@@ -1,0 +1,98 @@
+.container {
+    margin: 2rem auto;
+    max-width: 55rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-light);
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.container img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main {
+    max-width: 40rem;
+    margin: 1rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-title {
+    display: flex;
+    flex-flow: row;
+    margin: 0 5rem;
+    font-size: 1.4rem;
+    align-self: center;
+    margin: 2rem;
+}
+
+.info {
+    align-self: flex-start;
+    box-shadow: var(--shadow-light);
+    margin: 1rem 0;
+}
+
+.info li {
+    font-size: 0.9rem;
+    max-width: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-flow: row;
+    margin: 1rem;
+    align-items: center;
+}
+
+.info li div {
+    flex-grow: 0.5;
+    width: 5rem;
+}
+
+.info li p {
+    flex-grow: 9.5;
+    width: 5rem;
+}
+
+.info li p a {
+    width: 1rem;
+    color: blue;
+    word-break: break-all;
+}
+
+.description {
+    max-width: 40rem;
+    padding: 1rem;
+    line-height: 1.2rem;
+}
+
+.main-head {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.main-head::before {
+    content: "|";
+    font-size: 1.4rem;
+    color: rgb(255, 112, 94);
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        box-shadow: var(--shadow-cancel);
+    }
+}
+
+@media (max-width: 576px) {
+    .info li {
+        max-width: 19rem;
+        width: 19rem;
+    }
+}

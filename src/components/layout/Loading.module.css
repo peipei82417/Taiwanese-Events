@@ -1,0 +1,25 @@
+.loading {
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.loading-icon {
+    width: 40px;
+    height: 40px;
+    fill: rgb(119, 119, 119);
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

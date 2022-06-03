@@ -1,0 +1,25 @@
+.event-card-list {
+    margin: auto;
+    max-width: 48rem;
+    width: 48rem;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1132px) {
+    .event-card-list {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-card-list {
+        margin: auto;
+        max-width: auto;
+        width: auto;
+    }
+}

@@ -1,0 +1,101 @@
+.container {
+    width: 96%;
+    height: auto;
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(255, 255, 255);
+    align-self: flex-end;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: var(--shadow-dark);
+    z-index: 100;
+    animation: fadeIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item {
+    width: 32%;
+    height: 1.8rem;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    text-align: left;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    letter-spacing: 2px;
+    border-style: none;
+}
+
+.item:hover {
+    border-radius: 5px;
+    background-color: var(--color-grey-light-2);
+}
+
+.context {
+    display: flex;
+    font-size: 0.7rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: right;
+    color: rgb(101, 222, 20);
+}
+
+.clear-btn {
+    background-color: var(--color-primary);
+    width: inherit;
+    height: 2rem;
+    border-style: none;
+    border-top: 1px groove rgb(255, 255, 255);
+    color: black;
+}
+
+.clear-btn:hover {
+    background-color: var(--color-grey-light-2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1132px) {
+    .container {
+        width: 25rem;
+        left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 20rem;
+        left: 32%;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 17rem;
+        left: 35%;
+    }
+}

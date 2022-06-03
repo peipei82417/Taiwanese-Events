@@ -1,0 +1,27 @@
+.icon {
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    font-size: 1rem;
+    align-items: center;
+    right: 1.5rem;
+    top: 1rem;
+    color: var(--color-grey-dark-3);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.icon:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+.icon:active {
+    color: black;
+    transform: scale(0.8);
+}

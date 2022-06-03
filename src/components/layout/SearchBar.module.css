@@ -1,0 +1,36 @@
+.SearchBar {
+    width: 91%;
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto auto;
+}
+
+.rwd-container {
+    width: 100%;
+}
+
+.search-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+@media (max-width: 1132px) {
+    .rwd-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+
+    .search-options {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

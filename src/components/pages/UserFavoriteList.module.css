@@ -1,0 +1,17 @@
+.main {
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    max-width: 100%;
+}
+
+.no-event {
+    margin-top: -15rem;
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+}

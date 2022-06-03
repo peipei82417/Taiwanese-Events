@@ -1,0 +1,12 @@
+.container {
+    margin: 3rem auto;
+    width: 360px;
+    height: 25rem;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light-2);
+}

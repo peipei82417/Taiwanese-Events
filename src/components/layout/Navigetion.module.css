@@ -1,0 +1,55 @@
+.navigation {
+    width: 100%;
+    height: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    display: flex;
+    flex-flow: row;
+}
+
+.navigation ul li {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-grey-dark-3);
+}
+
+.navigation ul li:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    fill: black;
+}
+
+.navigation ul li a svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-grey-dark-3);
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .navigation ul li {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navigation {
+        height: 2rem;
+    }
+}

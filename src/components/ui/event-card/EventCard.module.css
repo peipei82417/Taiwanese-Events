@@ -1,0 +1,149 @@
+.container {
+    position: relative;
+    width: 15rem;
+    border-radius: 8px;
+    overflow: visible;
+    background-color: var(--color-primary);
+    color: var(--color-grey-dark-2);
+    margin: 0 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 0.1rem groove rgba(87, 87, 87, 0.1);
+    transition: 0.2s;
+    box-shadow: 0 1px 1px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.container:hover {
+    transform: scale(1.01);
+    border-bottom: 0.1rem groove rgba(87, 87, 87, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+.countdown {
+    top: -3px;
+    position: absolute;
+    text-align: center;
+    padding: 0.2rem 0.9rem;
+    line-height: 16px;
+    width: 20px;
+    height: 65px;
+    margin-left: 1rem;
+    border-radius: 3px;
+    background-color: #ff3c6d;
+    color: white;
+    border-top: 0.5px double rgb(211, 211, 211);
+    box-shadow: var(--shadow-light-2);
+    font-size: 14px;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    object-fit: cover;
+    height: 10rem;
+    flex-grow: 50;
+    transition: 0.2s ease;
+}
+
+.card-info {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.card-date {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.card-title {
+    margin: 1rem 0;
+}
+
+.card-category {
+    flex-grow: 8;
+    display: flex;
+    flex-flow: row wrap;
+    color: #24a5d0f2;
+    font-size: 14px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: rgb(69, 69, 69);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        border-radius: 5px;
+        overflow: visible;
+        color: var(--color-grey-dark-2);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        max-width: 190px;
+        max-height: 190px;
+        min-width: 190px;
+        min-height: 190px;
+    }
+
+    .image img {
+        width: 100%;
+        border-radius: 8px 0 0 8px;
+        overflow: hidden;
+        object-fit: cover;
+        height: 10rem;
+        flex-grow: 50;
+        transition: 0.2s ease;
+    }
+
+    .card-info {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .image {
+        max-width: 120px;
+        max-height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    .card-info {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .countdown {
+        top: auto;
+        left: -19px;
+        bottom: 3%;
+        position: absolute;
+        text-align: center;
+        padding: 0.2rem 0.5rem;
+        width: 63px;
+        height: 16px;
+        margin-left: 1rem;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+}

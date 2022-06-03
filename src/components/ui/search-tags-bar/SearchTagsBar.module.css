@@ -1,0 +1,43 @@
+.clear-btn {
+    align-self: flex-end;
+}
+
+.clear-btn button {
+    background-color: var(--color-button-normal);
+    color: black;
+    width: 5rem;
+    height: 1.5rem;
+    border-style: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    font-size: 0.8rem;
+}
+
+.clear-btn button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.search-tags-bar {
+    padding: 0.25rem 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media (max-width: 1132px) {
+    .search-tags-bar {
+        left: 0;
+        padding: 0.25rem 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .clear-btn {
+        position: absolute;
+        top: 50px;
+        align-self: flex-end;
+    }
+}

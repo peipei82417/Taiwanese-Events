@@ -1,0 +1,47 @@
+.container {
+    background-color: var(--color-primary);
+    height: auto;
+    margin: 1rem;
+    padding: 0.5rem;
+    margin-top: 0;
+    display: flex;
+    flex-flow: row;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-shadow: var(--shadow-light);
+    border-bottom: 0.5px groove rgb(255, 255, 255);
+    border-radius: 0.2rem;
+}
+
+.data-count {
+    flex-grow: 5;
+}
+
+.sorting-bar {
+    list-style: none;
+    flex-grow: 5;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+.sorting-bar li {
+    margin-left: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 0 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        font-size: 0.8rem;
+    }
+
+    .sorting-bar li {
+        margin-left: 1rem;
+    }
+}

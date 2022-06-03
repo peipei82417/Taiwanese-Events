@@ -1,0 +1,13 @@
+.footer {
+    height: 2rem;
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    font-style: oblique;
+}
