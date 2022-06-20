@@ -95,6 +95,7 @@
 }
 @media (max-width: 576px) {
     .container {
+        margin-top: 1.5rem;
         width: 17rem;
         left: 35%;
     }
